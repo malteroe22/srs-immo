@@ -48,7 +48,7 @@
       justify-content: center;
     }
 
-    .contact-button {
+    .contact-button, .impressum-button {
       padding: 12px 30px;
       background-color: #3a3a3a;
       color: #ffffff;
@@ -58,9 +58,11 @@
       font-size: 16px;
       font-family: 'Big Caslon', serif;
       transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
     }
 
-    .contact-button:hover {
+    .contact-button:hover, .impressum-button:hover {
       background-color: #555555;
       border-color: #777;
     }
@@ -85,27 +87,20 @@
       text-decoration: none;
     }
 
-    /* Impressum-Link */
-    .impressum-link {
+    /* Impressum Button Position */
+    .impressum-container {
       position: absolute;
       bottom: 20px;
-      font-size: 14px;
-    }
-
-    .impressum-link a {
-      color: #aaaaaa;
-      text-decoration: none;
-      font-family: 'Big Caslon', serif;
-    }
-
-    .impressum-link a:hover {
-      color: #ffffff;
     }
   </style>
 </head>
 <body>
   <img src="logo-srs-immobilien.png" alt="SRS Immobilien Logo" />
-  <h1>Kontaktieren Sie uns!</h1>
+  <h1>
+  Möchten Sie Ihre renovierungsbedürftige Immobilie verkaufen?
+  <br>
+  Kontaktieren Sie uns!
+  </h1>
 
   <div class="button-container">
     <button class="contact-button" onclick="revealEmail()">E-Mail</button>
@@ -115,8 +110,8 @@
   <div id="email" class="contact-info"></div>
   <div id="phone" class="contact-info"></div>
 
-  <div class="impressum-link">
-    <a href="impressum.html">Impressum</a>
+  <div class="impressum-container">
+    <a class="impressum-button" href="impressum.html">Impressum</a>
   </div>
 
   <script>
