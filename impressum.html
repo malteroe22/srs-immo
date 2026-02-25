@@ -13,13 +13,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Impressum – SRS Immobilien</title>
+
   <style>
     body {
       background-color: #131313;
       color: #ffffff;
       font-family: 'Big Caslon', serif;
       margin: 40px;
-      line-height: 2; /* mehr Zeilenabstand */
+      line-height: 2;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     h1 {
@@ -42,27 +46,29 @@
       margin-bottom: 16px;
     }
 
-    .back-button {
-      display: inline-block;
-      margin-top: 40px;
-      padding: 12px 30px;
-      background-color: #3a3a3a;
-      color: #ffffff;
-      border: 1px solid #555;
-      border-radius: 8px;
-      font-size: 16px;
+    /* Neuer Footer */
+    .footer-container {
+      margin-top: 60px;
+      text-align: center;
+      font-size: 14px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .footer-link {
+      color: #aaaaaa;
       text-decoration: none;
-      transition: all 0.3s ease;
       font-family: 'Big Caslon', serif;
     }
 
-    .back-button:hover {
-      background-color: #555555;
-      border-color: #777;
+    .footer-link:hover {
+      color: #ffffff;
     }
   </style>
 </head>
 <body>
+
   <h1>Impressum</h1>
 
   <h2>Angaben gemäß § 5 TMG</h2>
@@ -104,7 +110,12 @@
   <h2>Verbraucherstreitbeilegung / Universalschlichtungsstelle</h2>
   <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
 
-  <a class="back-button" href="index.html">Zurück zur Startseite</a>
+  <!-- Neuer Footer -->
+  <div class="footer-container">
+    <a class="footer-link" href="index.html">Startseite</a>
+    <a class="footer-link" href="agb.html">AGB</a>
+    <a class="footer-link" href="datenschutz.html">Datenschutz</a>
+  </div>
 
 </body>
 </html>
