@@ -94,20 +94,22 @@
       text-decoration: none;
     }
 
-    /* Impressum Button Position kleiner und dezenter */
-    .impressum-container {
+    /* Footer */
+    .footer-container {
       position: absolute;
       bottom: 20px;
       font-size: 14px;
+      display: flex;
+      gap: 20px;
     }
 
-    .impressum-button {
+    .footer-link {
       color: #aaaaaa;
       text-decoration: none;
       font-family: 'Big Caslon', serif;
     }
 
-    .impressum-button:hover {
+    .footer-link:hover {
       color: #ffffff;
     }
   </style>
@@ -128,8 +130,11 @@
   <div id="email" class="contact-info"></div>
   <div id="phone" class="contact-info"></div>
 
-  <div class="impressum-container">
-    <a class="impressum-button" href="impressum.html">Impressum</a>
+  <!-- Neuer Footer -->
+  <div class="footer-container">
+    <a class="footer-link" href="impressum.html">Impressum</a>
+    <a class="footer-link" href="agb.html">AGB</a>
+    <a class="footer-link" href="datenschutz.html">Datenschutz</a>
   </div>
 
   <script>
